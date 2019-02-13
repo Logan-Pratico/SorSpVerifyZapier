@@ -1,5 +1,4 @@
-const eligibilityInquiry = require('./creates/eligibilityInquiry');
-const getEligibilityResponse = require('./creates/getEligibilityResponse');
+const sameOrSimilarInquiry = require('./creates/sameOrSimilarInquiry');
 
 const getSessionKey = (z, bundle) => {
 	// this is successfully passing in user/password and should work
@@ -108,8 +107,7 @@ const App = {
   // If you want your creates to show up, you better include it here!
   creates: {
     //j [recipe.key]: eligibilityInquiry,
-     [eligibilityInquiry.key]: eligibilityInquiry,
-     [getEligibilityResponse.key]: getEligibilityResponse
+     [sameOrSimilarInquiry.key]: sameOrSimilarInquiry,
      //[recipe.key]: getEligibilityResponse
   }
 
